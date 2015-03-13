@@ -18,11 +18,12 @@ script: |
   sudo apt-get update -y
   sudo apt-get install wget -y
   ./run.sh
-  echo 'export PATH=$PATH:$HOME/.cabal/bin' >> ~/.profile
+  # echo 'export PATH=$PATH:$HOME/.cabal/bin' >> ~/.profile
   which cabal
-  cat ~/.profile
+  # cat ~/.profile
   whoami
-  which ~/.cabal/bin/pandoc
+  #which ~/.cabal/bin/pandoc
+  export
   which pdflatex
   which pandoc
   which gem
