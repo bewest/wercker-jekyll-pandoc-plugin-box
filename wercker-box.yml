@@ -18,6 +18,7 @@ script: |
   sudo apt-get update -y
   sudo apt-get install wget -y
   ./run.sh
+  export PATH=$PATH:$HOME/.cabal/bin
   which cabal
   echo cabal install pandoc
   which pdflatex
