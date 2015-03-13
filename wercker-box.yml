@@ -1,0 +1,23 @@
+name: jekyll-pandoc-plugin-box
+version: 0.0.1
+inherits: wercker/ubuntu12.04-webessentials@1.0.4
+type: main
+platform: ubuntu@12.04
+description: wercker box for compiling and publishing latex files using jekyll-pandoc
+keywords:
+  - latex
+  - tex-live
+  - pandoc
+  - jekyll
+  - publishing
+packages:
+  - texlive-full
+  - ghc
+  - cabal-install
+script: |
+  sudo apt-get update -y
+  sudo apt-get install wget -y
+  cabal install pandoc
+  which pdflatex
+  which pandoc
+  which gem
