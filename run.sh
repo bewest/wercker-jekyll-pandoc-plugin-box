@@ -3,5 +3,5 @@
 
 
 echo $PATH
-sudo apt-get install -y cabal-install
+sudo apt-get install -y cabal-install texlive-latex-recommended texlive-latex-extra
 
