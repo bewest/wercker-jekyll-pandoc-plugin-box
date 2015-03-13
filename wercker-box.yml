@@ -17,7 +17,8 @@ packages:
 script: |
   sudo apt-get update -y
   sudo apt-get install wget -y
-  cabal install pandoc
+  which cabal
+  echo cabal install pandoc
   which pdflatex
   which pandoc
   which gem
