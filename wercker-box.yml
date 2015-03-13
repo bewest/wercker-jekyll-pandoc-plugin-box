@@ -17,6 +17,7 @@ packages:
 script: |
   sudo apt-get update -y
   sudo apt-get install wget -y
+  ./run.sh
   which cabal
   echo cabal install pandoc
   which pdflatex
